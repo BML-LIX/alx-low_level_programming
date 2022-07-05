@@ -1,0 +1,1 @@
+0. This code prints _putchar
