@@ -22,7 +22,7 @@ _putchar(' ');
 _putchar((n3 / 10) + '0');
 _putchar((n3 % 10) + '0');
 }
-else if (n2 != 0; &&n3 < 10)
+else if (n2 != 0 && n3 < 10)
 {
 _putchar(',');
 _putchar(' ');
