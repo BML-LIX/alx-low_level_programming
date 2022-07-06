@@ -3,8 +3,9 @@
 /**
  * @brief 
  * 
+ * @param n 
  */
-void times_table(void)
+void print_to_98(int n)
 {
-    
+
 }
