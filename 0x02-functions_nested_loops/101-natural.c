@@ -8,13 +8,13 @@
 int main(void)
 {
 int n;
-unsigned long int s,s3,s5;
+unsigned long int s, s3, s5;
 
 s = 0;
 s3 = 0;
 s5 = 0;
 
-for (n =0; n < 1024; n++)
+for (n = 0; n < 1024; n++)
 {
 if ((n % 3) == 0)
 {
