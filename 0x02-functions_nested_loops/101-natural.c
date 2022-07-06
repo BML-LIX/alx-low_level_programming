@@ -8,7 +8,6 @@
 int main(void)
 {
 int n;
-int p;
 unsigned long int s,s3,s5;
 
 s = 0;
