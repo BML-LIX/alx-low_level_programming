@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * @brief 
- * 
- * @return int 
- */
-int add(int, int)
+* add - adding two numbers
+* @p: parameter
+* @q: parameter
+* Return: p + q
+*/
+int add(int p, int q)
 {
-
+return (p + q);
 }
