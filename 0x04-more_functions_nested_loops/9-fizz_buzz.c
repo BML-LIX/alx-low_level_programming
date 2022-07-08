@@ -4,7 +4,6 @@
 * main - rints the numbers from 1 to 100,
 * followed by a new line.
 * Multiple of 3's  print Fizz ,multiple of 5 print Buzz
-* both multiple print FizzBuzz
 * Return: Always 0
 */
 int main(void)
@@ -23,6 +22,10 @@ printf("Buzz")
 else if (n % 3 == 0 && n % 5 == 0)
 {
 printf("FizzBuzz");
+}
+else if (n == 1)
+{
+printf("%d", n);
 }
 else
 {
