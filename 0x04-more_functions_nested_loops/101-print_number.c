@@ -3,6 +3,8 @@
 /**
 *print_number - prints an integer
 *@n: integer to print
+*not allowed to use long type
+*Return: Always 0
 */
 void print_number(int n)
 {
@@ -12,7 +14,8 @@ if (n < 0)
 {
 n1 = -n;
 _putchar('-');
-} else
+} 
+else
 {
 n1 = n;
 }

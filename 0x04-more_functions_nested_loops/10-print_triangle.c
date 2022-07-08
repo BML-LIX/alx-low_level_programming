@@ -14,15 +14,15 @@ _putchar('\n');
 }
 else
 {
-for (n = 1; n < size; n++)
+for (n = 1; n <= size; n++)
 {
-for (n1 = 1; n1 < size; n1++)
+for (n1 = 1; n1 <= size; n1++)
 {
 _putchar(' ');
 }
 for (n1 = 1; n1 <= n; n1++)
 {
-_putchar(92);
+_putchar(35);
 }
 _putchar('\n');
 }

@@ -12,11 +12,11 @@ if (n <= 0)
 {
 _putchar('\n');
 }
-else
+else 
 {
 for (x = 0; x < n; x++)
 {
-_printchar('_');
+_printchar(95);
 }
 }
 _putchar('\n');
