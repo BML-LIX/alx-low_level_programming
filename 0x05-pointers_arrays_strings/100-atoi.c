@@ -27,5 +27,5 @@ num = num * 10 + (*s - '0');
 s++;
 } while (*s >= '0' && *s <= '9');
 }
-return (num * n1);
+return (num *n1);
 }
