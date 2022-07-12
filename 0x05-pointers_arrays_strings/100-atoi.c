@@ -25,5 +25,5 @@ num = num * 10 + (*n - '0');
 n++;
 } while (*n >= '0' && *n <= '9');
 }
-return (num *n1)
+return (num * n1);
 }

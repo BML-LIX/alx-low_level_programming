@@ -11,8 +11,7 @@ int n, n1;
 
 n1 = 0;
 while (s[n1] != '\0')
-n1++;
-
+{n1++;}
 for (n = n1 - 1; n >= 0; n--)
 {
 _putchar(s[n]);
