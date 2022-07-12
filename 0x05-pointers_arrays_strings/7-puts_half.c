@@ -16,7 +16,8 @@ if (n % 2 == 1)
 n1 = n / 2 + 1;
 }
 else
-{n1 = n / 2}
+{n1 = n / 2;
+}
 for (n2 = n1; n2 < n; n2++)
 {
 _putchar(str[n2]);

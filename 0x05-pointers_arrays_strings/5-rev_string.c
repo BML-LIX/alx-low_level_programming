@@ -14,15 +14,14 @@ n2 = 0;
 
 while (s[n1] != '\0')
 {
+    n1++;
+}
 n2 = n1 - 1;
-for (n = 0; n < n1 / 2; n++)
+for (n = 0; n < (n1 / 2); n++)
 {
 strg = s[n]; /*swapping*/
 s[n] = s[n2];
 s[n2] = strg;
 n2 = n2 - 1;
 }
-n1++;
-}
-
 }

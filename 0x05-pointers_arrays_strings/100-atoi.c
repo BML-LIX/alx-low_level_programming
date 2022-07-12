@@ -11,7 +11,7 @@ int _atoi(char *s)
 char *n;
 int n1;
 unsigned int num;
-while (*n != '\0' && (*n < '0' || *temp > '9'))
+while (*n != '\0' && (*n < '0' || *n > '9'))
 {
 if (*n == '-')
 {
