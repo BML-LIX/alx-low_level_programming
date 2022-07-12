@@ -8,22 +8,24 @@
 */
 int _atoi(char *s)
 {
-char *n;
 int n1;
 unsigned int num;
-while (*n != '\0' && (*n < '0' || *n > '9'))
+num = 0;
+n1 = 1;
+while (*s != '\0' && (*s < '0' || *s > '9'))
 {
-if (*n == '-')
+if (*s == '-')
 {
 n1 *= -1;
 }
+*s++;
 }
-if (*n != '\0')
+if (*s != '\0')
 {
 do {
-num = num * 10 + (*n - '0');
-n++;
-} while (*n >= '0' && *n <= '9');
+num = num * 10 + (*s - '0');
+s++;
+} while (*s >= '0' && *s <= '9');
 }
 return (num * n1);
 }
