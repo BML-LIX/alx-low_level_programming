@@ -12,7 +12,7 @@ int n;
 while (s[n])
 {
 if (s[n] >= 97 && s[n] <= 122)
-s[n] -= 32;
+s[n] = s[n] - 32;
 n++;
 }
 return (s);

@@ -7,3 +7,5 @@
 6. A function that capitalizes all words of a string. Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
 
 7.A function that encodes a string into 1337. You can only use one if in your code .You can only use two loops in your code .Letters a and A should be replaced by 4 .Letters e and E should be replaced by 3. Letters o and O should be replaced by 0 .Letters t and T should be replaced by 7 .Letters l and L should be replaced by 1 .You are not allowed to use switch .You are not allowed to use any ternary operation
+8. A function that encodes a string using rot13.
+9. A function that prints an integer.
