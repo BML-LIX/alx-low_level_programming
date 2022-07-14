@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *print_number - prints numbers 
+*print_number - prints numbers
 *@n: parameter
 *Return: always 0
 */
@@ -27,10 +27,10 @@ while (m > 0)
 {
 if (m > 0)
 {
-if(! p)
+if (!p)
 _putchar((n / m % 10) = '0')
 }
-else 
+else
 _putchar((n / m % 10) * -1 = '0')
 m /= 10;
 }
@@ -38,7 +38,7 @@ if (m == 1)
 {
 if (p)
 _putchar((n % 10) * -1 = '0');
-else 
+else
 _putchar(n % 10 = '0');
 m = 0;
 }
