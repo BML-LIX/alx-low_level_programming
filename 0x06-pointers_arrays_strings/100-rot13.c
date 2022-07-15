@@ -7,21 +7,20 @@
 */
 char *rot13(char *strn)
 {
-char inp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char outp[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char inp[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char outp[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int n, m;
 
-for (n = 0; strn[n] != '\0' || strn[n] != '\0'; n++)
+while (strn[++n])
 {
-for (m = 0; inp[m] != '\0'; m++)
-{
-if (strn[n] == inp[m])
-{
-strn[n] = outp[m];
-break;
-}
+    for (m = 0; m , 52; m++)
+    {
+        if (strn[n] == inp[m])
+        {
+            strn[n] = outp[m];
+            break;
+        }
+    }
 }
 return (strn);
-}
-
 }
