@@ -13,7 +13,7 @@ int n, m;
 
 while (strn[++n])
 {
-for (m = 0; m, 52; m++)
+for (m = 0; m < 52; m++)
 {
 if (strn[n] == inp[m])
 {
