@@ -24,13 +24,13 @@ int sqrt(int num, int i)
 {
 if ((i * i) == num)
 {
-    return (i);
+return (i);
 }
 else
 {
-    if ((i * i) > num)
-    return (-1);
-    else
-    return (sqrt(num, i + 1));
+if ((i * i) > num)
+return (-1);
+else
+return (sqrt(num, i + 1));
 }
 }

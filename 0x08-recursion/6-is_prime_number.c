@@ -34,11 +34,11 @@ return (0);
 }
 else
 {
-    return (find_prime(num, i + 1));
+return (find_prime(num, i + 1));
 }
 }
 else{
-    return (1);
+return (1);
 }
 }
 
