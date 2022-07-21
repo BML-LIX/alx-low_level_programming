@@ -1,6 +1,5 @@
 #include "main.h"
 
-int find_prime(int, int)
 /**
 *is_prime_number - check prime numbers
 *@n: int
@@ -8,25 +7,40 @@ int find_prime(int, int)
 */
 int is_prime_number(int n)
 {
-return (find_prime(n, 1));
+if (n <= 1)
+{
+return (0);
+}
+else 
+{
+return (find_prime(n, 2));
+}
 }
 
 
 /**
-*_prime - checks prime numbers
-*@n: number
-*@i: iterator
+*find_prime - checks prime numbers
+*@num: number
+*@i: iterator ,possible factor
 *Return: 0 or 1
 */
-int find_prime(int n, int i)
+int find_prime(int num, int i)
 {
-if (n <= 1)
+if (i < num)
+{
+if (num % 1 == 0)
+{
 return (0);
-
-if (n % i == 0 && i > 1)
-return (0);
-if ((n / i) < i)
-return (1);
-return (find_prime(n, i + 1));
-
 }
+else
+{
+    return (find_prime(num, i + 1));
+}
+}
+else{
+    return (1);
+}
+}
+
+
+
