@@ -9,12 +9,12 @@ int _sqrt_recursion(int n)
 {
 if (n < 0)
 return (-1);
-else 
+else
 return (sqrt(n, 0));
 }
 
 /**
-*_sqr - recursive square root
+*sqrt - recursive square root
 *@num: number
 *@i: recursion
 *Return: a number
@@ -30,7 +30,7 @@ else
 {
     if ((i * i) > num)
     return (-1);
-    else 
+    else
     return (sqrt(num, i + 1));
 }
 }
