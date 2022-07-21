@@ -2,7 +2,7 @@
 
 int find_prime(int, int)
 /**
-*is_prime_number - check prime numbers 
+*is_prime_number - check prime numbers
 *@n: int
 *Return: 1 if prime otherwise 0
 */
@@ -16,7 +16,7 @@ return (find_prime(n, 1));
 *_prime - checks prime numbers
 *@n: number
 *@i: iterator
-*Return: 0 or 1 
+*Return: 0 or 1
 */
 int find_prime(int n, int i)
 {
@@ -30,5 +30,3 @@ return (1);
 return (find_prime(n, i + 1));
 
 }
-
-
