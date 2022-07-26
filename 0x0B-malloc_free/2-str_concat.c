@@ -13,7 +13,7 @@ char *s;
 
 if (s1 == NULL)
 s1 = "";
-if (s2 = NULL)
+if (s2 == NULL)
 s2 = "";
 while (s1[n])
 n++;
@@ -21,7 +21,7 @@ while (s2[n1])
 n1++;
 
 l = n + n1;
-s = (char *)malloc(l* sizeof(char) + 1)
+s = (char *)malloc(l *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 n1 = 0;

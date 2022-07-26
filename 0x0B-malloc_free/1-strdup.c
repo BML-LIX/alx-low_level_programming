@@ -14,7 +14,7 @@ if (str == NULL)
 return (NULL);
 while (str[n])
 n++;
-s = (char *)malloc(n * sizeof(char) + 1)
+s = (char *)malloc(n *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 while (n1 < n)
