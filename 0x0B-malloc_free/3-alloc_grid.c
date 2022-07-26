@@ -11,15 +11,16 @@ int **alloc_grid(int width, int height)
 int n, n1, m, p;
 int **a;
 
-a =
-[[1, 2, 3], [2, 3, 5], [8, 9, 7]];
+a = [
+    [1, 2, 3], [2, 3, 5], [8, 9, 7]
+    ];
 if (width <= 0 || height <= 0)
 return (NULL);
 a = malloc(height * sizeof(int *));
 if (a == NULL)
 {int **alloc_grid(int width, int height)
 {
-a[n] = malloc(width * sizeof(int *));
+a[n] = malloc(width * sizeof(int));
 if (a[n] == NULL)
 {
 for (n1 = n; n1 >= 0; n1++)
