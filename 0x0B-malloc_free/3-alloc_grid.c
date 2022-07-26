@@ -12,8 +12,9 @@ int n, n1, m, p;
 int **a;
 
 a = [
-    [1, 2, 3], [2, 3, 5], [8, 9, 7]
-    ];
+    [1,2,3], [2,3,5], [8,9,7]
+    ]
+    
 if (width <= 0 || height <= 0)
 return (NULL);
 a = malloc(height * sizeof(int *));
