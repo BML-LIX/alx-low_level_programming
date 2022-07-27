@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - prints its number of command lines 
+*main - prints its number of command lines
 *@argc: argc parm
 *@argv: an array of commands
-*Return: 0 
+*Return: 0
 */
 int main(int argc, char *argv[])
 {
