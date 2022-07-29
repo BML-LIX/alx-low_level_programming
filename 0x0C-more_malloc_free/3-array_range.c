@@ -6,11 +6,11 @@
  *array_range - allocates mem to arrays of integers
 *@min: param 1
 *@max: param 2
-*Return: the pointer to the newly created array 
+*Return: the pointer to the newly created array
 */
 int *array_range(int min, int max)
 {
-int *array, n , size;
+int *array, n, size;
 if (min > max)
 return (NULL);
 size = max - min + 1;
