@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- *array_range - allocates mem to arrays of integers
+*array_range - allocates mem to arrays of integers
 *@min: param 1
 *@max: param 2
 *Return: the pointer to the newly created array
