@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 
 /**
  * print_strings - print all argument
@@ -23,9 +24,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		c =  va_arg(a,  char*);
 		printf("%s%s", c == NULL ? "(nil)" : c, m != (n - 1) ? separator : "");
 	}
-	va_end(ap);
+	va_end(a);
 	putchar('\n');
-
 
 }
 
