@@ -11,7 +11,10 @@ Return: the address of the new element, or NULL if it failed.
 Return: the address of the new element, or NULL if it failed
 4. a function that frees a listint_t list.
 5.  a function that frees a listint_t list.
-The function sets the head to NULL
+The function sets the head to NULL..Description: at the end, the head will point to NULL.
+ as we know the tail always points to NULL, we will
+ * So, * be moving a temp pointer, free its memory if not NULL
+ * Untill we reach the tail
 6. a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
 if the linked list is empty return 0
 7. function that returns the nth node of a listint_t linked list.
