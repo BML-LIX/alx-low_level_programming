@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_listint - print all the elements of lisyint_list

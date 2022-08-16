@@ -12,24 +12,24 @@
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *now;
-	listint_t *new-nod;
+	listint_t *new_nod;
 
 	now = *head;
 	while (now && now->next != NULL)
 		now = now->next;
 
-	new-nod = malloc(sizeof(listint_t));
-	if (new-nod == NULL)
+	new_nod = malloc(sizeof(listint_t));
+	if (new_nod == NULL)
 	{
-		free(new-nod);
+		free(new_nod);
 		return (NULL);
 	}
-	new-nod->n = n;
-	new-nod->next = NULL;
+	new_nod->n = n;
+	new_nod->next = NULL;
 
 	if (now)
-		now->next = new-nod;
+		now->next = new_nod;
 	else
-		*head = new-nod;
-	return (new-nod);
+		*head = new_nod;
+	return (new_nod);
 }
