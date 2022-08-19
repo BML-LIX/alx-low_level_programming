@@ -2,10 +2,24 @@
 #include <stdlib.h>
 #include "main.h"
 
+
+/**
+ * _length - finds the length of a string
+ * @s: pointer to the string to check
+ * Return: nothing
+*/
+int _length(const char *str)
+{
+int i = 0;
+while (str[i])
+	i++;
+
+return (i);
+}
+
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary number
- *
  * Return: 0 or converted number
  */
 unsigned int binary_to_uint(const char *b)
@@ -27,18 +41,4 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	return (n);
-}
-
-/**
- * _length - finds the length of a string
- * @s: pointer to the string to check
- * Return: void
-*/
-int _length(const char *s)
-{
-int i = 0;
-while (s[i])
-	i++;
-
-return (i);
 }
