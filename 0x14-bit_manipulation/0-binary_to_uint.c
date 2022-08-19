@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-
 /**
  * _length - finds the length of a string
  * @s: pointer to the string to check
