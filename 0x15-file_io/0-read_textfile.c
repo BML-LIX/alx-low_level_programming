@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output.
+ * read_textfile - reads a text file and prints it
+ * to the POSIX standard output.
  * @filename: A pointer to the name of the file.
  * @letters: number of letters the function will read and print.
  *
@@ -20,9 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buf == NULL)
 		return (0);
 
-	opn = opnen(filename, O_redONLY);
+	opn = open(filename, O_RDONLY);
 	red = read(opn, buf, letters);
-	wrt = wrtite(STDOUT_FILENO, buf, red);
+	wrt = write(STDOUT_FILENO, buf, red);
 
 	if (opn == -1 || red == -1 || wrt == -1 || wrt != red)
 	{

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
-void close_file(int fd);
+void close_file(int m);
 
 /**
  * create_buffer - allocates 1024 bytes for a buffer.
@@ -28,7 +28,7 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * @m: The file descriptor to be closed.
  */
 void close_file(int m)
 {
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (orig == -1 || r == -1)
+		if (orig == -1 || red == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read orig file %s\n", argv[1]);
@@ -74,8 +74,8 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		wrt = write(to, buffer, r);
-		if (to == -1 || w == -1)
+		wrt = write(to, buffer, red);
+		if (to == -1 || wrt == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
